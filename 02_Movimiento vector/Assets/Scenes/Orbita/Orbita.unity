@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc6a308c630d8ac47a3dc13b3632c5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: {x: 0, y: 0, z: 0}
+  velocidad: {x: 0, y: 1, z: 0}
   masa: 1
   target: {fileID: 2130946682}
   targetMass: 2
@@ -229,7 +229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658203929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1, y: -0.04, z: 0}
+  m_LocalPosition: {x: -1.43, y: -0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -408,7 +408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130946678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.507774, y: 2.827638, z: 0}
+  m_LocalPosition: {x: 1.08, y: -0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc6a308c630d8ac47a3dc13b3632c5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: {x: 0, y: 0, z: 0}
+  velocidad: {x: 0, y: -1, z: 0}
   masa: 1
   target: {fileID: 658203934}
   targetMass: 1
