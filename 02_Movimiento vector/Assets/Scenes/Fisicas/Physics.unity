@@ -299,7 +299,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779031044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.41, y: 3.52, z: 0}
+  m_LocalPosition: {x: 4.09, y: 2.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1272271779}
@@ -318,6 +318,7 @@ GameObject:
   - component: {fileID: 1096560067}
   - component: {fileID: 1096560066}
   - component: {fileID: 1096560065}
+  - component: {fileID: 1096560069}
   m_Layer: 0
   m_Name: Cubito2
   m_TagString: Untagged
@@ -395,12 +396,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096560064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.93, y: -0.24, z: 0}
+  m_LocalPosition: {x: -1.93, y: 2.4099998, z: 0}
   m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1096560069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096560064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598530dd041a98a4c93ccd8b0a1551d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dampFactor: 0.9
+  mass: 1
+  coeficienteF: 0.7
 --- !u!1 &1124726012
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +429,7 @@ GameObject:
   - component: {fileID: 1124726015}
   - component: {fileID: 1124726014}
   - component: {fileID: 1124726013}
+  - component: {fileID: 1124726017}
   m_Layer: 0
   m_Name: Cubito1
   m_TagString: Untagged
@@ -490,12 +507,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124726012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.16, y: -0.4, z: 0}
+  m_LocalPosition: {x: 1.55, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1124726017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124726012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598530dd041a98a4c93ccd8b0a1551d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dampFactor: 0.9
+  mass: 1
+  coeficienteF: 0.7
 --- !u!1 &1272271778
 GameObject:
   m_ObjectHideFlags: 0
