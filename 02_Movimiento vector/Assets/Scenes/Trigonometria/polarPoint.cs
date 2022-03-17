@@ -34,9 +34,15 @@ public class polarPoint : MonoBehaviour
 
         Debug.DrawLine(Vector3.zero, cartesian);
 
-        if (radio >= 5 || radio <= 5)
+        if (radio >= 5 || radio <= -5)
         {
-            radio -= radialSpeed * Time.deltaTime;
+            radialSpeed *= -1;
+            //radio -= radialSpeed * Time.deltaTime;
+        }
+        if (radio <= 5 || radio >= -5)
+        {
+            radialSpeed *= 1;
+            //radio -= radialSpeed * Time.deltaTime;
         }
 
     }
