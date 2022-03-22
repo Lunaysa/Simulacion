@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class looking : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float aceleracion;
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 mousePos = MousePosition();
-        float angle = Mathf.Atan2(mousePos.y, mousePos.x);
-        transform.rotation = Quaternion.Euler(0f, 0f, angle * Mathf.Rad2Deg);
-
-        transform.localPosition = MousePosition();
-
+        Vector3 posicion = transform.position;
+        Vector3 direccion = (mousePos - posicion).normalized;
+        var velocidad = direccion * aceleracion;
+        Target(posicion + velocidad);
+        Vector3 posicionFinal = new Vector3(velocidad.x, velocidad.y, 0);
+        transform.position += posicionFinal * Time.deltaTime;
     }
 
     private Vector4 MousePosition() {
@@ -29,4 +25,18 @@ public class looking : MonoBehaviour
         worldPos.z = 0;
         return worldPos;
     }
+
+    private void rotacionZ(float radians)
+    {
+        transform.rotation = Quaternion.Euler(0.0f, 0.0f, radians * Mathf.Rad2Deg);
+    }
+    private void Target(Vector3 targPos)
+    {
+        Vector3 mousePos = MousePosition();
+        Vector3 diferencia = mousePos - transform.position;
+        float radianes = Mathf.Atan2(diferencia.y, diferencia.x) - Mathf.PI / 2;
+        rotacionZ(radianes);
+    }
+
+
 }
