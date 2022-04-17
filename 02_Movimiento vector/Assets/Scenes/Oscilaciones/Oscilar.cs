@@ -5,17 +5,16 @@ using UnityEngine;
 public class Oscilar : MonoBehaviour
 {
     [Header("Prefabs")]
-    [SerializeField]
-    private GameObject prefab;
+    [SerializeField] private GameObject prefab;
 
     [Header("settings")]
-    [SerializeField]
-    private int instanciasTotales = 50;
+    [SerializeField] private int instanciasTotales = 50;
 
-    [SerializeField]
-    [Range(0, 10)] private float factorSeparation = 0.5f;
+    [SerializeField] [Range(0, 10)] private float factorSeparation = 0.5f;
 
-   
+    [SerializeField] [Range(0, 10)] private float amplitud = 1f;
+
+
 
     void Start()
     {
@@ -34,8 +33,8 @@ public class Oscilar : MonoBehaviour
         foreach (Transform child in transform)
         {
             float x = i * factorSeparation;
-            
-            child.transform.localPosition = new Vector3(x, Mathf.Sin(x + Time.time));
+            float y = amplitud * Mathf.Sin(Time.time + x);
+            child.transform.localPosition = new Vector3(x, y);
             ++i;
         }
     }
