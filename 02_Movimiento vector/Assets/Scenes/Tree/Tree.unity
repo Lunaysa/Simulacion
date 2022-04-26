@@ -153,8 +153,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   branchPrefab: {fileID: 7023621460103059740, guid: a2789938b9e199d45babf4ff490a8d97, type: 3}
-  recursionDepth: 2
-  currentDepth: 0
+  recursiveDepth: 6
+  rootLength: 2
+  currentLengt: -1
+  reductionLengthPerLevel: 0.1
 --- !u!4 &29670207
 Transform:
   m_ObjectHideFlags: 0
