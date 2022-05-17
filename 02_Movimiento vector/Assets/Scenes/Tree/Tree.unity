@@ -155,7 +155,6 @@ MonoBehaviour:
   branchPrefab: {fileID: 7023621460103059740, guid: a2789938b9e199d45babf4ff490a8d97, type: 3}
   recursiveDepth: 6
   rootLength: 2
-  currentLengt: -1
   reductionLengthPerLevel: 0.1
 --- !u!4 &29670207
 Transform:
@@ -224,7 +223,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8.35943
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -248,7 +247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851800774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.52, y: 7.74, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
